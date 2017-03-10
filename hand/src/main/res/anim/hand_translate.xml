@@ -5,7 +5,7 @@
         android:fromXDelta="0"
         android:toXDelta="-350%"
         android:fillBefore="true"
-        android:duration="800"
+        android:duration="1200"
         android:fillAfter="true"
         android:repeatCount="3"
         android:repeatMode="restart"

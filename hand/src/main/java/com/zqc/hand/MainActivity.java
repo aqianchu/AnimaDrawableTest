@@ -26,6 +26,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         requestWindowFeature(1);
+        context = this;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         root = findViewById(R.id.activity_main);
@@ -53,8 +54,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
         }
     }
 
-    int handTime = 800;
-    int handStart = 600;
+    int handTime = 1200;
+    int handStart = 1800;
 
     private void initPopuWindow() {
         final View popupWindowView = getLayoutInflater().inflate(R.layout.hand_title, null);
@@ -104,7 +105,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 //                hand_root.startAnimation(alpha);
                 popupWindow.dismiss();
             }
-        }, handStart+handTime+800);
+        }, handStart+handTime+1200);//1200表示
         //设置背景半透明
         backgroundAlpha(1f);
         //关闭事件
